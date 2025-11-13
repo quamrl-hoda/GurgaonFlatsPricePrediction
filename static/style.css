@@ -1,0 +1,236 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #d0d8dd;
+    --success-color: #27ae60;
+    --info-color: #17a2b8;
+    --warning-color: #f39c12;
+    --danger-color: #e74c3c;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #242628;
+    line-height: 1.6;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card-header {
+    border-radius: 15px 15px 0 0 !important;
+    font-weight: 600;
+}
+
+.btn {
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #3498db, #2980b9);
+    border: none;
+}
+
+.btn-success {
+    background: linear-gradient(45deg, #27ae60, #229954);
+    border: none;
+}
+
+.btn-info {
+    background: linear-gradient(45deg, #17a2b8, #138496);
+    border: none;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Form Styles */
+.form-control, .form-select {
+    border-radius: 10px;
+    border: 2px solid #e9ecef;
+    padding: 12px 15px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+.form-control:valid, .form-select:valid {
+    border-color: var(--success-color);
+}
+
+.form-control:invalid, .form-select:invalid {
+    border-color: var(--danger-color);
+}
+
+/* Result Cards */
+.result-card {
+    background: linear-gradient(45deg, #28a745, #20c997);
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.property-card {
+    background: white;
+    border: 1px solid #e9ecef;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+}
+
+.property-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Badges */
+.similarity-badge {
+    background: linear-gradient(45deg, #28a745, #20c997);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.distance-badge {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+/* Plot Containers */
+.plot-container {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #e9ecef;
+}
+
+.chart-container {
+    height: 300px;
+    width: 100%;
+}
+
+/* Loading Spinners */
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Navigation */
+.navbar-brand {
+    font-weight: 700;
+}
+
+.nav-link {
+    border-radius: 8px;
+    margin: 0 2px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .card {
+        margin-bottom: 1rem;
+    }
+    
+    .btn {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Feature Icons */
+.feature-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--secondary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-right: 15px;
+}
+
+/* Stats */
+.stat-number {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* Steps */
+.step-number {
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-weight: bold;
+}
+
+/* Apartment Options */
+.apartment-option {
+    padding: 12px;
+    margin: 5px 0;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.apartment-option:hover {
+    border-color: var(--secondary-color);
+    background-color: #f8f9ff;
+}
+
+.apartment-option.selected {
+    border-color: var(--secondary-color);
+    background-color: #e7f1ff;
+}
